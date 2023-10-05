@@ -28,6 +28,7 @@ h3 {
 }
 
 p {
+  display: block;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -61,6 +62,21 @@ p {
   text-transform: capitalize;
 }
 
+a.primary-link:hover {
+  color: #fff;
+}
+
+a.secondary-link,
+a.email-link {
+  color: var(--primary-color);
+}
+
+.primary-link:hover,
+.secondary-link:hover {
+  opacity: 0.9;
+  transition: all 0.1s ease-in-out;
+}
+
 .homepage-link {
   color: var(--primary-color);
   display: block;
@@ -68,7 +84,8 @@ p {
 }
 
 .about-paragraphs {
-  margin: 30px 0;
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
 .about-paragraphs p {
@@ -85,4 +102,20 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
